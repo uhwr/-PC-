@@ -1,12 +1,8 @@
 # 我去图书馆 PC 端模拟蓝牙签到
 
-> Windows PC BrightBeacon iBeacon broadcast simulation for Woqu Library BLE sign-in testing.
-
 ## 项目简介
 
 本仓库用于在 Windows PC 上通过 PowerShell 模拟 BrightBeacon iBeacon 广播，以便在授权测试环境中对“我去图书馆”相关蓝牙签到链路进行验证、观察与复现。
-
-This repository provides a small Windows PowerShell setup for simulating BrightBeacon iBeacon broadcasts in authorized BLE sign-in testing scenarios.
 
 仓库目标是保留一个轻量、直接、可读的桌面端蓝牙广播模拟方案，而不是混合小程序解包、管理端分析或其他不相关内容。
 
@@ -18,8 +14,6 @@ This repository provides a small Windows PowerShell setup for simulating BrightB
 - 复现 PC 端蓝牙签到模拟流程
 - 记录脚本的运行方式、参数说明和修改过程
 - 为后续继续调整广播参数提供基础版本
-
-It is intentionally kept small and focused on the BLE broadcast script plus supporting notes.
 
 ## 当前目录结构
 
@@ -41,17 +35,6 @@ It is intentionally kept small and focused on the BLE broadcast script plus supp
 
 - `相关文档/Start-BrightBeacon-修改过程总结.md`
   记录脚本整理和修改过程，便于回看当前版本是怎样形成的。
-
-## English Summary
-
-- `Start-BrightBeacon.ps1`
-  Main script that builds the iBeacon payload and starts Bluetooth LE advertising on Windows.
-
-- `相关文档/BrightBeacon_操作文档.md`
-  Usage notes, parameter adjustment guide, and common troubleshooting details.
-
-- `相关文档/Start-BrightBeacon-修改过程总结.md`
-  Change log and cleanup notes for the current script version.
 
 ## 脚本行为说明
 
@@ -99,8 +82,6 @@ powershell -ExecutionPolicy Bypass -File ".\Start-BrightBeacon.ps1"
 
 按回车后脚本会主动停止广播。
 
-Run the script from PowerShell and press Enter to stop broadcasting.
-
 ## 适用环境
 
 建议在以下环境中使用：
@@ -108,12 +89,6 @@ Run the script from PowerShell and press Enter to stop broadcasting.
 - Windows 设备
 - 支持蓝牙广播相关能力的系统环境
 - 已授权的测试、验证或研究场景
-
-Recommended environment in English:
-
-- Windows desktop or laptop
-- Bluetooth LE capable environment
-- Authorized testing or research scenario
 
 如果设备本身蓝牙能力、系统权限或运行环境不足，脚本可能无法正常启动广播。
 
@@ -156,5 +131,3 @@ Recommended environment in English:
 ## 免责声明
 
 仅用于已获授权的测试、研究与验证场景。请勿用于绕过签到、考勤、门禁、定位或任何未经授权的用途。
-
-For authorized testing and research only. Do not use this script for bypassing sign-in, attendance, access control, location checks, or any unauthorized activity.
