@@ -1,5 +1,7 @@
 # 我去图书馆 PC 端模拟蓝牙签到
 
+![项目封面](assets/cover.png)
+
 ## 项目简介
 
 本仓库用于在 Windows PC 上通过 PowerShell 模拟 BrightBeacon iBeacon 广播，以便在授权测试环境中对“我去图书馆”相关蓝牙签到链路进行验证、观察与复现。
